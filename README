@@ -1,0 +1,47 @@
+# Sistema de Autenticação Django
+
+Este é um sistema de autenticação básico desenvolvido com Django. Ele inclui funcionalidades como registro de novos usuários, login, atualização de perfil e logout.
+
+## Funcionalidades
+
+- **Página de Apresentação:** Página inicial acessível a todos.
+- **Sistema:** Página acessível apenas a usuários autenticados.
+- **Cadastro:** Registro de novos usuários.
+- **Login:** Autenticação de usuários cadastrados.
+- **Atualização de Perfil:** Usuários autenticados podem atualizar seus dados de perfil.
+- **Logout:** Encerrar a sessão do usuário.
+
+## Requisitos
+
+- Python 3.x
+- Django 3.x
+- Outras dependências listadas em `requirements.txt`
+
+## Instalação
+
+Siga os passos abaixo para configurar o ambiente de desenvolvimento e executar o projeto.
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-projeto.git
+
+# Navegue até o diretório do projeto
+cd seu-projeto
+
+# Crie um ambiente virtual
+python -m venv venv
+
+# Ative o ambiente virtual
+# No Windows
+venv\Scripts\activate
+# No Unix ou MacOS
+source venv/bin/activate
+
+# Realize as migrações do banco de dados
+python manage.py migrate
+
+# Crie um superusuário
+python manage.py createsuperuser
+
+# Inicie o servidor de desenvolvimento
+python manage.py runserver
